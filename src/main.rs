@@ -79,9 +79,9 @@ impl eframe::App for NimbleGui {
                 });
                 ui.checkbox(&mut self.sync_dry_run, "Dry Run");
                 if ui.button("Run Sync").clicked() {
-                    let agent = ureq::agent();
+                    let mut agent = ureq::agent();
                     if let Err(e) = nimble::commands::sync::sync(
-                        &agent,
+                        &mut agent,
                         &self.sync_repo_url,
                         &PathBuf::from(&self.sync_path),
                         self.sync_dry_run,
