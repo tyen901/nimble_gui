@@ -1,0 +1,3 @@
+[submodule "lib/nimble"]
+	path = lib/nimble
+	url = https://github.com/vitorhnn/nimble.git
