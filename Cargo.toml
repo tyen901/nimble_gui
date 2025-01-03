@@ -1,0 +1,5 @@
+[package]
+name = "nimble-gui"
+
+[dependencies]
+nimble = { path = "lib/nimble" }
