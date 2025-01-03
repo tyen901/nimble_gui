@@ -1,3 +1,9 @@
+[workspace]
+members = [
+    ".",
+    "lib/nimble"
+]
+
 [package]
 name = "nimble-gui"
 version = "0.0.0"
